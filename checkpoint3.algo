@@ -1,0 +1,18 @@
+ALGORITHM Inserting
+VAR
+    j,i,n: INTEGER;
+    tab:ARRAY_OF_INTEGER[5];
+BEGIN
+FOR i from 1 to tab.legth-1 step 1 do 
+    read(tab);
+    END_FOR
+    FOR i from 1 to tab.legth-1 step 1 do 
+IF (tab(i) <tab(i-1)) DO 
+n:= tab(i);
+tab(i):= tab(i-1);
+tab(i-1):=n;
+END_FOR
+END
+
+
+
